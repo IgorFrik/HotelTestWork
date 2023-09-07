@@ -24,6 +24,7 @@
 		78EA7BF92AA6316800B1DCAE /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA7BF82AA6316800B1DCAE /* MasterViewModel.swift */; };
 		78EA7BFB2AA6317100B1DCAE /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA7BFA2AA6317100B1DCAE /* MasterView.swift */; };
 		78EA7BFD2AA6317F00B1DCAE /* MasterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA7BFC2AA6317F00B1DCAE /* MasterModel.swift */; };
+		78EA7C002AA6383800B1DCAE /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA7BFF2AA6383800B1DCAE /* NetWork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		78EA7BF82AA6316800B1DCAE /* MasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewModel.swift; sourceTree = "<group>"; };
 		78EA7BFA2AA6317100B1DCAE /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		78EA7BFC2AA6317F00B1DCAE /* MasterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterModel.swift; sourceTree = "<group>"; };
+		78EA7BFF2AA6383800B1DCAE /* NetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				78EA7BD22AA62BF300B1DCAE /* HotelTestWorkApp.swift */,
 				78EA7BD42AA62BF300B1DCAE /* ContentView.swift */,
+				78EA7BFE2AA6382C00B1DCAE /* NetWork */,
 				78EA7BF72AA6314100B1DCAE /* Master */,
 				78EA7BE02AA62E3B00B1DCAE /* HotelPage */,
 				78EA7BE12AA62FAD00B1DCAE /* RoomPage */,
@@ -136,6 +139,14 @@
 				78EA7BFA2AA6317100B1DCAE /* MasterView.swift */,
 			);
 			path = Master;
+			sourceTree = "<group>";
+		};
+		78EA7BFE2AA6382C00B1DCAE /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				78EA7BFF2AA6383800B1DCAE /* NetWork.swift */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +221,7 @@
 			files = (
 				78EA7BEE2AA630C100B1DCAE /* RoomModel.swift in Sources */,
 				78EA7BFD2AA6317F00B1DCAE /* MasterModel.swift in Sources */,
+				78EA7C002AA6383800B1DCAE /* NetWork.swift in Sources */,
 				78EA7BF42AA630ED00B1DCAE /* BookingModel.swift in Sources */,
 				78EA7BFB2AA6317100B1DCAE /* MasterView.swift in Sources */,
 				78EA7BE62AA6307800B1DCAE /* HotelModel.swift in Sources */,
