@@ -25,6 +25,7 @@
 		78EA7BFB2AA6317100B1DCAE /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA7BFA2AA6317100B1DCAE /* MasterView.swift */; };
 		78EA7BFD2AA6317F00B1DCAE /* MasterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA7BFC2AA6317F00B1DCAE /* MasterModel.swift */; };
 		78EA7C002AA6383800B1DCAE /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA7BFF2AA6383800B1DCAE /* NetWork.swift */; };
+		78EA7C022AACDB0D00B1DCAE /* HotelJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA7C012AACDB0C00B1DCAE /* HotelJson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		78EA7BFA2AA6317100B1DCAE /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		78EA7BFC2AA6317F00B1DCAE /* MasterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterModel.swift; sourceTree = "<group>"; };
 		78EA7BFF2AA6383800B1DCAE /* NetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
+		78EA7C012AACDB0C00B1DCAE /* HotelJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelJson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				78EA7BFF2AA6383800B1DCAE /* NetWork.swift */,
+				78EA7C012AACDB0C00B1DCAE /* HotelJson.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				78EA7BD52AA62BF300B1DCAE /* ContentView.swift in Sources */,
 				78EA7BF22AA630DF00B1DCAE /* BookingView.swift in Sources */,
 				78EA7BF92AA6316800B1DCAE /* MasterViewModel.swift in Sources */,
+				78EA7C022AACDB0D00B1DCAE /* HotelJson.swift in Sources */,
 				78EA7BEC2AA630AE00B1DCAE /* RoomView.swift in Sources */,
 				78EA7BE82AA6309500B1DCAE /* HotelView.swift in Sources */,
 				78EA7BD32AA62BF300B1DCAE /* HotelTestWorkApp.swift in Sources */,

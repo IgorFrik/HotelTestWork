@@ -50,6 +50,10 @@ extension HotelViewModel: HotelViewModelProtocol {
                 )
                 .frame(height: 200)
                 .tabViewStyle(PageTabViewStyle())
+                Button("TEST") {
+                    print("TEST")
+                    NetWork().netWork()
+                }
             }
         }
     }
