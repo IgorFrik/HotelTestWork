@@ -9,7 +9,6 @@ protocol HotelViewModelProtocol {
 //-MARK: - Model
 class HotelViewModel {
     private let hotelModel: some HotelModelProtocol = HotelModel()
-    
 }
 
 //-MARK: - Extension Model
@@ -23,7 +22,7 @@ extension HotelViewModel: HotelViewModelProtocol {
     @ViewBuilder private func setHotelView() -> some View {
         ScrollView {
             VStack {
-                Text(hotelModel.name)
+                Text(hotelModel.model?.name ?? "Error name")
                 TabView(content: {
                     AsyncImage(url: URL(string: "https://www.atorus.ru/sites/default/files/upload/image/News/56149/Club_Priv%C3%A9_by_Belek_Club_House.jpg")) { image in
                         image.resizable()
@@ -52,7 +51,7 @@ extension HotelViewModel: HotelViewModelProtocol {
                 .tabViewStyle(PageTabViewStyle())
                 Button("TEST") {
                     print("TEST")
-                    NetWork().netWork()
+                    print(self.hotelModel.model ?? "Error name")
                 }
             }
         }
