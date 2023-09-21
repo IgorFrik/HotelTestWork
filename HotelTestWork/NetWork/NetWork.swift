@@ -2,7 +2,7 @@ import Foundation
 
 //-MARK: - Protocol
 protocol HotelNetWorkProtocol {
-    func netWork(completion: @escaping (HotelJson) -> ())
+    func netWork() async -> HotelJson
 }
 
 //-MARK: - Model
@@ -16,12 +16,9 @@ class HotelNetWork {
     private func showFailure() {
         print("showFailure")
     }
-}
-
-//-MARK: - Extension Model
-extension HotelNetWork: HotelNetWorkProtocol {
-    func netWork(completion: @escaping (HotelJson) -> ()) {
-        let url = URL(string: self.url)!
+    
+    private func netWork(completion: @escaping (HotelJson) -> ()) {
+        guard let url = URL(string: self.url) else { return }
         URLSession.shared.dataTask(with: url) { data, response, error in
             if error != nil {
                 self.showFailure()
@@ -38,5 +35,16 @@ extension HotelNetWork: HotelNetWorkProtocol {
             }
             self.showSuccess()
         }.resume()
+    }
+}
+
+//-MARK: - Extension Model
+extension HotelNetWork: HotelNetWorkProtocol {
+    func netWork() async -> HotelJson {
+        await withCheckedContinuation { temp in
+            netWork { data in
+                temp.resume(returning: data)
+            }
+        }
     }
 }

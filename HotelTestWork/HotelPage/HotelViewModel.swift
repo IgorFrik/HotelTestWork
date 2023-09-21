@@ -22,7 +22,7 @@ extension HotelViewModel: HotelViewModelProtocol {
     @ViewBuilder private func setHotelView() -> some View {
         ScrollView {
             VStack {
-                Text(hotelModel.model?.name ?? "Error name")
+                Text(hotelModel.model.name ?? "Error name")
                 TabView(content: {
                     AsyncImage(url: URL(string: "https://www.atorus.ru/sites/default/files/upload/image/News/56149/Club_Priv%C3%A9_by_Belek_Club_House.jpg")) { image in
                         image.resizable()
@@ -51,7 +51,7 @@ extension HotelViewModel: HotelViewModelProtocol {
                 .tabViewStyle(PageTabViewStyle())
                 Button("TEST") {
                     print("TEST")
-                    print(self.hotelModel.model ?? "Error name")
+                    print(self.hotelModel.model.name ?? "Error name")
                 }
             }
         }
