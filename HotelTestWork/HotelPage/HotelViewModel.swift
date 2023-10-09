@@ -24,33 +24,18 @@ extension HotelViewModel: HotelViewModelProtocol {
             VStack {
                 Text(hotelModel.model.name ?? "Error name")
                 TabView(content: {
-                    AsyncImage(url: URL(string: "https://www.atorus.ru/sites/default/files/upload/image/News/56149/Club_Priv%C3%A9_by_Belek_Club_House.jpg")) { image in
+                    AsyncImage(url: URL(string: hotelModel.model.image_urls?[0] ?? "https://github.com")) { image in
                         image.resizable()
                     } placeholder: {
                         Color.gray
                     }
                     .frame(width: 500, height: 200)
                     .clipShape(RoundedRectangle(cornerRadius: 25))
-                    AsyncImage(url: URL(string: "https://deluxe.voyage/useruploads/articles/The_Makadi_Spa_Hotel_02.jpg")) { image in
-                        image.resizable()
-                    } placeholder: {
-                        Color.gray
-                    }
-                    .frame(width: 500, height: 250)
-                    .clipShape(RoundedRectangle(cornerRadius: 25))
-                    AsyncImage(url: URL(string: "https://deluxe.voyage/useruploads/articles/article_1eb0a64d00.jpg")) { image in
-                        image.resizable()
-                    } placeholder: {
-                        Color.gray
-                    }
-                    .frame(width: 500, height: 250)
-                    .clipShape(RoundedRectangle(cornerRadius: 25))
                 }
                 )
                 .frame(height: 200)
                 .tabViewStyle(PageTabViewStyle())
                 Button("TEST") {
-                    print("TEST")
                     print(self.hotelModel.model.name ?? "Error name")
                 }
             }

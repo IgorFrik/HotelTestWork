@@ -10,11 +10,11 @@ class HotelNetWork {
     private let url = "https://run.mocky.io/v3/35e0d18e-2521-4f1b-a575-f0fe366f66e3"
     
     private func showSuccess() {
-        print("showSuccess")
+        print("HotelNetWorkShowSuccess")
     }
     
     private func showFailure() {
-        print("showFailure")
+        print("HotelNetWorkShowFailure")
     }
     
     private func netWork(completion: @escaping (HotelJson) -> ()) {
