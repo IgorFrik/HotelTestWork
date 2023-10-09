@@ -10,6 +10,7 @@ class UnsafeTask<T> {
         }
     }
 
+
     func get() -> T {
         if let result = result { return result }
         semaphore.wait()
