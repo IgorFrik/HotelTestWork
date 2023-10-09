@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		78C7E42F2ABCA367002D38CF /* UnsafeTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C7E42E2ABCA367002D38CF /* UnsafeTask.swift */; };
 		78EA7BD32AA62BF300B1DCAE /* HotelTestWorkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA7BD22AA62BF300B1DCAE /* HotelTestWorkApp.swift */; };
 		78EA7BD52AA62BF300B1DCAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA7BD42AA62BF300B1DCAE /* ContentView.swift */; };
 		78EA7BD72AA62BF500B1DCAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78EA7BD62AA62BF500B1DCAE /* Assets.xcassets */; };
@@ -30,7 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		78C7E42E2ABCA367002D38CF /* UnsafeTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsafeTask.swift; sourceTree = "<group>"; };
 		78EA7BCF2AA62BF300B1DCAE /* HotelTestWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelTestWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78EA7BD22AA62BF300B1DCAE /* HotelTestWorkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelTestWorkApp.swift; sourceTree = "<group>"; };
 		78EA7BD42AA62BF300B1DCAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 			children = (
 				78EA7BFF2AA6383800B1DCAE /* NetWork.swift */,
 				78EA7C012AACDB0C00B1DCAE /* HotelJson.swift */,
-				78C7E42E2ABCA367002D38CF /* UnsafeTask.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -237,7 +234,6 @@
 				78EA7BF92AA6316800B1DCAE /* MasterViewModel.swift in Sources */,
 				78EA7C022AACDB0D00B1DCAE /* HotelJson.swift in Sources */,
 				78EA7BEC2AA630AE00B1DCAE /* RoomView.swift in Sources */,
-				78C7E42F2ABCA367002D38CF /* UnsafeTask.swift in Sources */,
 				78EA7BE82AA6309500B1DCAE /* HotelView.swift in Sources */,
 				78EA7BD32AA62BF300B1DCAE /* HotelTestWorkApp.swift in Sources */,
 				78EA7BF02AA630D700B1DCAE /* BookingViewModel.swift in Sources */,
